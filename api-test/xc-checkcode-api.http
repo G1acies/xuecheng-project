@@ -1,0 +1,9 @@
+### 申请验证码
+POST {{checkcode_host}}/checkcode/pic
+
+### 校验验证码
+POST {{checkcode_host}}/checkcode/verify?key=checkcode:691320628a224f129a77516f6c6c67de&code=jxrb
+
+
+
+

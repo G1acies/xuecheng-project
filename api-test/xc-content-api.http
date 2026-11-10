@@ -1,0 +1,43 @@
+###
+POST {{gateway_host}}/content/course/list?pageNo=2&pageSize=3
+Content-Type: application/json
+
+{
+  "auditStatus": "202004",
+  "courseName": "java",
+  "publishStatus": ""
+}
+
+###
+GET {{content_host}}/content/course-category/tree-nodes
+
+### 创建课程
+POST {{content_host}}/content/course
+Content-Type: application/json
+
+{
+  "charge": "201000",
+  "price": 0,
+  "originalPrice":0,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "",
+  "pic": "",
+  "teachmode": "200002",
+  "users": "",
+  "tags": "",
+  "grade": "204001",
+  "description": ""
+}
+
+###
+GET {{content_host}}/content/course/40
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsieHVlY2hlbmctcGx1cyJdLCJ1c2VyX25hbWUiOiJ6aGFuZ3NhbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE3NjAwOTkzODYsImF1dGhvcml0aWVzIjpbInAxIl0sImp0aSI6ImI2Y2UwMmJmLWE3OWItNDEzNC1iZmQ1LTRiZTNlZTRhNDQzYSIsImNsaWVudF9pZCI6IlhjV2ViQXBwIn0.uDQ028kcRDTqB-Oy8Xh6iXSi2Kalhx6EZ84D54PsJyo
+
+###
+GET {{gateway_host}}/content/course/40
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsieHVlY2hlbmctcGx1cyJdLCJ1c2VyX25hbWUiOiJ6aGFuZ3NhbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE3NjAwOTkzODYsImF1dGhvcml0aWVzIjpbInAxIl0sImp0aSI6ImI2Y2UwMmJmLWE3OWItNDEzNC1iZmQ1LTRiZTNlZTRhNDQzYSIsImNsaWVudF9pZCI6IlhjV2ViQXBwIn0.uDQ028kcRDTqB-Oy8Xh6iXSi2Kalhx6EZ84D54PsJyo

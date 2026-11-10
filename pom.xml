@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.xuecheng</groupId>
+    <artifactId>xuecheng-plus</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>xuecheng-plus</name>
+    <description>学成在线 - 基于 Spring Cloud Alibaba 的在线教育平台（聚合工程）</description>
+
+    <modules>
+        <module>xuecheng-plus-parent</module>
+        <module>xuecheng-plus-base</module>
+        <module>xuecheng-plus-gateway</module>
+        <module>xuecheng-plus-auth</module>
+        <module>xuecheng-plus-checkcode</module>
+        <module>xuecheng-plus-content</module>
+        <module>xuecheng-plus-media</module>
+        <module>xuecheng-plus-learning</module>
+        <module>xuecheng-plus-search</module>
+        <module>xuecheng-plus-system</module>
+        <module>xuecheng-plus-message-sdk</module>
+        <module>xuecheng-plus-generator</module>
+    </modules>
+
+</project>

@@ -1,0 +1,30 @@
+
+#微服务配置
+spring:
+  application:
+    name: content-service
+  cloud:
+    nacos:
+      server-addr: ${NACOS_ADDR:127.0.0.1:8848}
+      discovery: #服务注册相关配置
+        namespace: dev1
+        group: xuecheng-plus-project
+      config: #配置文件相关配置
+        namespace: dev1
+        group: xuecheng-plus-project
+        file-extension: yaml
+        refresh-enabled: true
+        shared-configs:
+          - data-id: feign-${spring.profiles.active}.yaml
+            group: xuecheng-plus-common
+            refresh: true
+  profiles:
+    active: dev
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/xcplus_content?serverTimezone=UTC&userUnicode=true&useSSL=false&
+#    username: root
+#    password: ${DB_PASSWORD:}
+# 日志文件配置路径
+logging:
+  config: classpath:log4j2-dev.xml
