@@ -1,6 +1,6 @@
 package com.xuecheng.learning.api;
 
-import com.xuecheng.base.model.RestResponse;
+import com.xuecheng.base.model.model.RestResponse;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
